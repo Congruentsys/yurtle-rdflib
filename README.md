@@ -62,7 +62,7 @@ graph.query("""
 """)
 ```
 
-One query. Any complexity. Aggregations, joins, filters, graph traversal — all built-in.
+One query. Aggregations, joins, filters, graph traversal — all built-in.
 
 ### 2. **Interoperability with Standard Vocabularies**
 
@@ -202,7 +202,7 @@ graph.store.sync()
 
 ### Serializer
 
-- **Round-trip safe**: Preserves markdown content
+- **Designed to preserve markdown content** on a round trip (see `tests/test_serializer.py::TestRoundTrip`)
 - **Clean output**: Filters internal provenance triples
 - **Standard prefixes**: Auto-binds common namespaces
 - **Works with rdflib**: `graph.serialize("file.md", format="yurtle")`
